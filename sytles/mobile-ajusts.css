@@ -1,0 +1,45 @@
+@media (max-width: 768px) {
+    nav {
+        #primary-menu {
+            li:nth-child(3), li:nth-child(2){
+                display: none;
+            }
+        }
+    }
+
+    header .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        #profile {
+            display: grid;
+
+        }
+        #info {
+            columns: span 1;
+        }
+    }
+
+    main {
+        display: grid;
+        justify-items: center;
+        img {
+            height: 368px;
+            width: 368px;
+            object-fit: cover;
+        }
+    }
+
+    footer {
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        span {
+            margin-inline: auto;
+        }
+        span:nth-child(1) {
+            grid-column: span 2;
+        }
+    }
+}
